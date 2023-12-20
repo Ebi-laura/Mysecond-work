@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto&display=swap');
+body{
+        background-color:hsl(30, 38%, 92%);
+        padding-top: 5%;
+}
+.parent{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+}
+#page1{
+        width:25%;
+        height: 500px;
+        border-top-left-radius: 10px; 
+}
+.desktop{
+        width:100%;
+        height:500px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+.mobile{
+        display: none;
+}
+#page2{
+        width: 25%;
+        background-color:hsl(0, 0%, 100%);
+        border-top-right-radius: 10px;  
+        height: 500px;
+        border-bottom-right-radius: 10px;
+}
+span{
+        color: hsl(158, 36%, 37%);
+        font-size: 35px;  
+        padding-right: 30px; 
+        font-weight: 700;
+        
+}
+.second h1{
+        font-family: 'Fraunces', serif;
+        font-size: 35px;
+        font-weight: 700;
+        padding: 0px; 
+        margin-left: 10%;
+}
+.light1{
+        color:hsl(228, 12%, 48%) ;
+        font-size: 20px;
+         padding: 0px 10px 0px 0px; 
+        font-weight: 500;
+        margin-left: 10%;
+        
+}
+.light2{
+        color:hsl(228, 12%, 48%) ;
+        font-size: 20px;
+         padding: 0px 0px 0px 0px; 
+        font-weight: 500;
+        margin-left: 10%;
+        
+}
+.green{
+        color:hsl(228, 12%, 48%) ;
+        font-size: 15px;
+         padding: 0px 10px 0px 0px; 
+        font-weight: 500;
+        margin-left: 10%;
+        font-family: 'Fraunces', serif;
+}
+button{
+        width: 80%;
+        height: 60px;
+        margin-left: 10%;
+       margin-right: 25%;
+       color: hsl(0, 0%, 100%);
+       background-color:  hsl(158, 36%, 37%);
+       background-image: url(./icon-cart.svg);
+       background-repeat: no-repeat;
+       background-position: 50px 20px;
+       border-radius: 10px;
+       font-size: 15px;
+}
+ @media screen and (max-width:992px) {
+        body{
+                padding-top: 0%;
+        }
+       .parent{
+                display: block;
+        }
+       #page1{
+        width: 90%;
+        height: 480px;
+        border-radius: 10px 10px 0px 0px; 
+        margin: 5%;
+       } 
+       .desktop{
+        display: none;
+       }
+       .mobile{
+        display: block;
+        width:100%;
+        height: 500px;
+        border-radius: 10px 10px 0px 0px; 
+        padding: 0%;
+       }
+       #page2{
+        width: 90%;
+        background-color:hsl(0, 0%, 100%);
+        height: 500px;
+        border-radius: 0px 0px 10px 10px;
+        margin: 5%;
+       }
+       button{
+        width: 80%;
+        margin-left: 10%;
+       }
+       .second{
+        height: 500px;
+       }
+       .second h1{
+        font-family: 'Fraunces', serif;
+        font-size: 35px;
+        font-weight: 700;
+        padding: 0px; 
+        margin-left: 10%;
+        }
+        .light1{
+         padding-top:20px ; 
+        }
+}
